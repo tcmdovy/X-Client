@@ -18,8 +18,8 @@ namespace StupidTemplate.Mods
         }
         public static void RPCProtection()
         {
-            bool inRoom = PhotonNetwork.InRoom;
-            if (inRoom)
+            
+            if (PhotonNetwork.InRoom;)
             {
                 GorillaNot.instance.rpcCallLimit = int.MaxValue;
                 PhotonNetwork.RemoveRPCs(PhotonNetwork.LocalPlayer);
